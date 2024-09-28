@@ -1,0 +1,210 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2E005E; /* Deep purple background */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #110225; /* Darker Purple */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #FF00FF; /* Neon Pink Hover */
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    background-color: #230043;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.square-boxes .box {
+    width: 400px;
+    height: 300px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #FF00FF;
+    overflow: hidden;
+}
+
+.square-boxes .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Section */
+.carousel-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-carousel-image {
+    width: 70%;
+    position: relative;
+}
+
+.main-carousel-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.carousel-image-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #FFF;
+}
+
+.carousel-image-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.carousel-image-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.carousel-image-text button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #111;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.carousel-sidebar {
+    width: 25%;
+    padding-left: 20px;
+}
+
+.carousel-sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.carousel-sidebar-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.carousel-sidebar-item p {
+    font-size: 16px;
+    color: white;
+}
+
+.carousel-sidebar-item:hover {
+    opacity: 0.8;
+}
+
+/* CTA Button */
+.hero-cta {
+    margin-top: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    background-color: #FF00FF; /* Neon Pink Button */
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #FF1DEA;
+}
+
+/* Footer */
+footer {
+    background-color: #230043; /* Footer Background Color */
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .square-boxes {
+        flex-direction: column; /* Stack boxes vertically on smaller screens */
+        align-items: center;
+    }
+
+    .square-boxes .box {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin: 10px 0; /* Add vertical margin */
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+
+    .carousel-sidebar {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .carousel-sidebar-item {
+        justify-content: center;
+    }
+}
